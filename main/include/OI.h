@@ -7,7 +7,7 @@
 
 #pragma once
 #include <frc/XboxController.h>
-#include <frc/Buttons/JoystickButton.h>
+#include <frc/buttons/JoystickButton.h>
 
 class OI {
  public:
@@ -17,11 +17,10 @@ class OI {
   frc::JoystickButton *btnEjectHatchPanel;
   frc::JoystickButton *btnIntakeCargoBall;
   frc::JoystickButton *btnEjectCargoBall;
-  frc::JoystickButton *btnRaiseGamePieceManipulator;
-  frc::JoystickButton *btnLowerGamePieceManipulator;
   frc::JoystickButton *btnHABLift;
   frc::JoystickButton *btnHABRetractFront;
   frc::JoystickButton *btnHABRetractRear;
   frc::JoystickButton *btnHABForward;
   frc::JoystickButton *btnHABReverse;
+  frc::JoystickButton *btnSignalLight;
 };
