@@ -23,9 +23,11 @@
 
 // Game Piece Manipulator commands & Subsystem
 #include "commands/GamePieceManipulatorManual.h"
+#include "commands/GamePieceManipulatorMoveToPosition.h"
 #include "commands/HatchPanelEject.h"
 #include "subsystems/GamePieceManipulator.h"
 
+#include "commands/HABLift.h"
 #include "subsystems/HABClimber.h"
 
 // Utility subsystem and commands
@@ -57,6 +59,8 @@ class Robot : public frc::TimedRobot {
   frc::Command* m_autonomousCommand = nullptr;
 	frc::Command *m_teleopCommand = nullptr;
   frc::Command *m_gamePieceCommand = nullptr;
+  frc::Command *m_gamePieceCommandPID = nullptr;
+  frc::Command *m_habClimbCommand = nullptr;
   ExampleCommand m_defaultAuto;
   MyAutoCommand m_myAuto;
   frc::SendableChooser<frc::Command*> m_chooser;
